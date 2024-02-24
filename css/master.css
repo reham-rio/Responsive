@@ -1,0 +1,405 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+}
+/* End GLobal Rules */
+/* start my framework */
+.container {
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.tx-center {
+    text-align: center;
+}
+.clearfix{
+    clear: both;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: none;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.h1 {
+    font-size: 2em;
+}
+.responsive-paragraph {
+    font-size: 22px;
+    line-height: 1.8;
+}
+.responsive-image {
+    width: 100%;
+}
+.classic-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.img-thumbnail {
+    padding: 3px;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+}
+/* end my framework */
+/* start header */
+.header {
+    position: relative;
+    background: url(../imgs/header.jpg) no-repeat top center;
+    --webkit-background-size: cover;
+    min-height: 500px;
+}
+.header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: rgba(0 168 255 / 18%);
+}
+.header .overlay h1 {
+    font-size: 60px;
+    margin-top: 100px;
+}
+.header .overlay .plan {
+    width: 48%;
+    padding: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
+    font-size: 24px;
+    border: 4px solid #fff;
+}
+.header .overlay .order {
+    padding: 20px;
+    margin: 30px 1% 0;
+    font-size: 24px;
+    border: 4px solid #fff;
+}
+/* end header */
+/* start features */
+.features {
+    padding: 30px 0
+}
+.features .h1 {
+    font-size: 50px;
+    color: #555
+} 
+.features .feat {
+    padding: 0 20px 0 0;
+    margin-bottom: 30px;
+    color: #555;
+}
+.features .feat h2 {
+    margin: 10px 0 8px;
+}
+.features .feat p {
+    line-height: 1.6;
+    margin: 0;
+} 
+/* end features */
+/* start about us */
+.about-us {
+    background-color: #ececec;
+    padding: 30px 0;
+}
+.about-us .h1 {
+    font-size: 50px;
+    color: #848484;
+}
+.about-us .responsive-paragraph {
+    color: #848484;
+}
+/* end about us */
+/* start our pricing table */
+.pricing-table {
+    padding: 50px 0;
+    color: #FFF;
+    background-color: #444;
+}
+.pricing-table .h1 {
+    font-size: 50px;
+    margin: 0 0 40px;
+
+}
+.pricing-table .pricing-plan {
+    position: relative;
+    padding: 20px 0;
+    border: 3px solid #FFF;
+}
+.pricing-table .pricing-plan h3 {
+    font-size: 26px;
+    margin: 0 0 10px;
+}
+.pricing-table .pricing-plan .pricing {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #bfbfbf;
+}  
+.pricing-table .pricing-plan ul {
+    font-size: 18px;
+    line-height: 2;
+}
+/* end our pricing table */
+/* start what they say */
+.they-say {
+    padding: 50px 0;
+}
+.they-say .h1 {
+    font-size: 50px;
+    margin: 0 0 30px;
+    color: #555;
+}
+.they-say .person-say {
+    padding: 20px;
+    margin: 0 0 25px;
+    border-radius: 10px;
+    border: 1px solid #DDD;
+    background-color: #EEE;
+}
+.they-say .person-say .avatar {
+    width: 120px;
+    margin-right: 20px;
+}
+.they-say .person-say h3 {
+    margin: 5px 0 10px
+}
+.they-say .person-say p {
+    width: calc(100% - 140px);
+    margin: 0;
+    line-height: 1.7;
+}
+/* end what they say */
+/* start information */
+.information {
+    font-size: 18px;
+    padding: 30px 0;
+    background-color: #ececec;
+}
+.information .h1 {
+    font-size: 50px;
+    color: #848484;
+}
+.information .info-list li {
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px;
+    padding: 15px;
+    background-color: #DDD;
+    cursor: pointer;
+}
+.information .info-list li.selected {
+    color: #22a9bd;
+    background-color: #FFF;
+}
+.information .info-content {
+    margin-bottom: 30px;
+}
+.information .info-content > div {
+    padding: 20px;
+    line-height: 2;
+    background-color: #FFF;
+}
+.information .info-content > div:not(:first-of-type) {
+    display: none;
+}
+/* end information */
+/* start footer */
+.footer {
+    color: #EEE;
+    background-color: #333;
+}
+.footer .copyright,
+.footer .design {
+    padding: 20px;
+    text-align: center;
+}
+/* end footer */
+/* start grid system */
+@media (max-width: 420px) { /* Custom Media Not Found On Bootstrap */
+    h1 {
+      margin-top: 20px !important;
+      font-size: 50px !important;
+    }
+    .header .overlay .plan {
+      float: none;
+      margin: 0 auto 20px;
+      font-size: 22px;
+    }
+}
+  
+@media (max-width: 767px) {
+    h1 {
+      margin-top: 40px !important;
+    }
+    .header .overlay .plan {
+      float: none;
+      margin: 0 auto 20px;
+      font-size: 22px;
+    }
+    .visible-xs {
+        display: block !important;
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    .features .feat {
+        text-align: center;
+    }
+    .responsive-paragraph {
+        text-align: center;
+        font-size: 20px !important;
+    }
+    .our-works .image {
+        width: 100%;
+    }
+    .pricing-table .pricing-plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .they-say .person-say .avatar {
+        float: none;
+        margin: auto;
+    }
+    .they-say .person-say h3 {
+        float: none;
+        text-align: center;
+    }
+    .they-say .person-say p {
+        float: none;
+        width: 100%;
+    }
+    .information .info-list li {
+        display: block;
+    }
+    .footer .copyright,
+    .footer .design {
+    width: 100%;
+    }
+    .footer .copyright,
+    .footer .design {
+    width: 100%;
+   }
+}
+@media (min-width: 768px) { 
+    .container {
+        width: 750px;
+    }
+    .features .feat {
+        width: 50%;
+    }
+    .our-works .image {
+        width: 50%;
+    }
+    .pricing-table .pricing-plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .they-say .person-say:first-of-type {
+        width: 100%;
+    }
+    .they-say .person-say:not(:first-of-type) {
+        width: 49%;
+    }
+    .they-say .person-say:last-of-type {
+        margin-left: 2%;
+    }
+    .footer .copyright,
+    .footer .design {
+    width: 50%;
+    }
+    .footer .copyright,
+    .footer .design {
+      width: 50%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { /* Small Screen Rules */
+    .container {
+      width: 750px
+    }
+    .visible-sm {
+      display: block !important
+    }
+    .hidden-sm {
+      display: none !important
+    }
+    .they-say .person-say:not(:first-of-type) .avatar {
+        float: none;
+        margin: auto
+    }
+    .they-say .person-say:not(:first-of-type) h3 {
+        float: none;
+        text-align: center
+    }
+    .they-say .person-say:not(:first-of-type) p {
+        float: none;
+        width: 100%
+    }
+  }
+@media(min-width: 992px) {
+    .features .feat {
+        width: 33.3333%;
+    }
+    .our-works .image {
+        width: 33.33333%;
+    }
+    .pricing-table .pricing-plan:not(.ultimate) {
+        margin-right: 1%;
+    }
+    .pricing-table .pricing-plan {
+        width: 32.66666%;
+        margin-bottom: 0;
+    }
+    .pricing-table .pricing-plan.plus {
+        left: 33.66666%;
+    }
+    .pricing-table .pricing-plan.premium {
+        right: 33.66666%;
+    }
+    .they-say .person-say:first-of-type {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) { /* Medium Screen Rules */
+    .container {
+      width: 970px
+    }
+    .visible-md {
+      display: block !important
+    }
+    .hidden-md {
+      display: none !important
+    }
+  }
+@media (min-width: 1200px) { /* Large Screen Rules */
+    .container {
+      width: 1170px
+    }
+    .visible-lg {
+      display: block !important
+    }
+    .hidden-lg {
+      display: none !important
+    }
+    .our-works .image {
+        width: 25%
+    }
+}  
+/* end grid system */
